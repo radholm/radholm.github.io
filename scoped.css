@@ -1,0 +1,74 @@
+body {
+    font: 14px/1.5em "Fira Code";
+    color: rgb(207, 207, 207);
+    background-color: #191933;
+}
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Fade-in animation */
+
+.anim {
+    margin-top: 5em;
+    font-size: 18px;
+    text-align: center;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
