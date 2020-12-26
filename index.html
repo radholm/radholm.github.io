@@ -20,28 +20,46 @@
             <p>fredrik radholm</p>
             <p>computer engineer</p>
             <a href="https://github.com/radholm" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/fredrik-radholm/" target="_blank"><i class="fa fa-linkedin"
-                    aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/fredrik-radholm/" target="_blank">
+                <i class="fa fa-linkedin" aria-hidden="true"></i></a>
         </div>
         <div class="grid-menu">
             <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-                <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                <button class="tablinks" onclick="openInfo(event, 'about')">
+                    <div class="glow">about</div>
+                </button>
+                <button class="tablinks" onclick="openInfo(event, 'competence')">
+                    <div class="glow">competence</div>
+                </button>
+                <button class="tablinks" onclick="openInfo(event, 'portfolio')">
+                    <div class="glow">portfolio</div>
+                </button>
             </div>
-            <div id="London" class="tabcontent">
-                <h3>London</h3>
-                <p>London is the capital city of England.</p>
+            <div id="about" class="tabcontent">
+                <div class="anim">
+                    <p>London is the capital city of England.</p>
+                </div>
             </div>
 
-            <div id="Paris" class="tabcontent">
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
+            <div id="competence" class="tabcontent">
+                <div class="anim">
+                    <div class="text-container">
+                        isjdgpoisad
+                        ogakspogdk
+                        dsrfjgijspdfpoigjspd
+                        sdjfgpojapdofjg
+                        asodfgposjdafgj
+                        oksodfgk sdfgodsfjgspf
+                        fgj sdofjgopsd fpogjsd fopg
+                        osdfjgpo sdfpgo dfpog dfg
+                    </div>
+                </div>
             </div>
 
-            <div id="Tokyo" class="tabcontent">
-                <h3>Tokyo</h3>
-                <p>Tokyo is the capital of Japan.</p>
+            <div id="portfolio" class="tabcontent">
+                <div class="anim">
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
             </div>
         </div>
         <div class="grid-footer">
@@ -49,7 +67,7 @@
         </div>
     </div>
     <script>
-        function openCity(evt, cityName) {
+        function openInfo(evt, infoName) {
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
@@ -59,7 +77,7 @@
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
             }
-            document.getElementById(cityName).style.display = "block";
+            document.getElementById(infoName).style.display = "block";
             evt.currentTarget.className += " active";
         }
     </script>
