@@ -55,6 +55,7 @@ a {
 }
 
 /* Create an active/current tablink class */
+
 .tab button.active {
     font-size: 18px;
     color: #fff;
@@ -75,11 +76,8 @@ a {
     text-align: center;
     animation: fadein 2s;
     -moz-animation: fadein 2s;
-    /* Firefox */
     -webkit-animation: fadein 2s;
-    /* Safari and Chrome */
     -o-animation: fadein 2s;
-    /* Opera */
 }
 
 @keyframes fadein {
@@ -94,7 +92,6 @@ a {
 
 @-moz-keyframes fadein {
 
-    /* Firefox */
     from {
         opacity: 0;
     }
@@ -106,7 +103,6 @@ a {
 
 @-webkit-keyframes fadein {
 
-    /* Safari and Chrome */
     from {
         opacity: 0;
     }
@@ -118,7 +114,6 @@ a {
 
 @-o-keyframes fadein {
 
-    /* Opera */
     from {
         opacity: 0;
     }

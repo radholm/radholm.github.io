@@ -2,6 +2,13 @@
 <title>fredrik radholm</title>
 
 <head>
+    <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone/babel.min.js"></script>
+    <script type="module/javascript" src="react.js"></script>
     <link rel="stylesheet" href="fira_code.css">
     <link rel="stylesheet" href="scoped.css">
     <link rel="stylesheet" href="normalize.css">
@@ -66,6 +73,9 @@
             <p>by fredrik radholm</p>
         </div>
     </div>
+    <script>
+        var Alert = ReactBootstrap.Alert;
+    </script>
     <script>
         function openInfo(evt, infoName) {
             var i, tabcontent, tablinks;
