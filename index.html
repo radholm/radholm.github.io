@@ -42,36 +42,59 @@
                     <div class="glow">portfolio</div>
                 </button>
             </div>
-            <div id="about" class="tabcontent">
-                <div class="anim">
-                    <p>London is the capital city of England.</p>
-                </div>
-            </div>
-
-            <div id="competence" class="tabcontent">
-                <div class="anim">
-                    <div class="text-container">
-                        isjdgpoisad
-                        ogakspogdk
-                        dsrfjgijspdfpoigjspd
-                        sdjfgpojapdofjg
-                        asodfgposjdafgj
-                        oksodfgk sdfgodsfjgspf
-                        fgj sdofjgopsd fpogjsd fopg
-                        osdfjgpo sdfpgo dfpog dfg
-                    </div>
-                </div>
-            </div>
-
-            <div id="portfolio" class="tabcontent">
-                <div class="anim">
-                    <p>Tokyo is the capital of Japan.</p>
-                </div>
+        </div>
+    </div>
+    <div id="about" class="tabcontent">
+        <div class="anim">
+            <div class="text-container">
+                isjdgpoisad
+                ogakspogdk
+                dsrfjgijspdfpoigjspd
+                sdjfgpojapdofjg
+                asodfgposjdafgj
+                oksodfgk sdfgodsfjgspf
+                fgj sdofjgopsd fpogjsd fopg
+                osdfjgpo sdfpgo dfpog dfg
+                isjdgpoisad
+                ogakspogdk
+                dsrfjgijspdfpoigjspd
+                sdjfgpojapdofjg
+                asodfgposjdafgj
+                oksodfgk sdfgodsfjgspf
+                fgj sdofjgopsd fpogjsd fopg
+                osdfjgpo sdfpgo dfpog dfg
             </div>
         </div>
-        <div class="grid-footer">
-            <p>by fredrik radholm</p>
+    </div>
+
+    <div id="competence" class="tabcontent">
+        <div class="anim">
+            <div class="text-container">
+                isjdgpoisad
+                ogakspogdk
+                dsrfjgijspdfpoigjspd
+                sdjfgpojapdofjg
+                asodfgposjdafgj
+                oksodfgk sdfgodsfjgspf
+                fgj sdofjgopsd fpogjsd fopg
+                osdfjgpo sdfpgo dfpog dfg
+            </div>
         </div>
+    </div>
+
+    <div id="portfolio" class="tabcontent">
+        <div class="anim">
+            <div class="text-container">
+                isjdgpoisad
+                ogakspogdk
+                dsrfjgijspdfpoigjspd
+                sdjfgpojapdofjg
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>by fredrik radholm</p>
+    </div>
     </div>
     <script>
         var Alert = ReactBootstrap.Alert;
@@ -87,7 +110,7 @@
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
             }
-            document.getElementById(infoName).style.display = "block";
+            document.getElementById(infoName).style.display = "inherit";
             evt.currentTarget.className += " active";
         }
     </script>
